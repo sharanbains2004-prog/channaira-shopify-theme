@@ -1,0 +1,94 @@
+{% comment %} Converted homepage from provided HTML. Replace static content with sections/snippets as needed. {% endcomment %}
+
+<! -- Hero / content starts -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="container hero__inner">
+    <span class="eyebrow">Affordable Luxury Jewelry</span>
+    <h1>Affordable Luxury,<br><em>Made to Be Noticed.</em></h1>
+    <p class="sub">Luxury-inspired jewelry designed to make you look and feel extraordinary—without the luxury price tag.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary btn--lg" href="#collections">Shop Now</a>
+      <a class="btn btn--outline btn--lg" href="#collections">Explore Collections</a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">Scroll<i></i></div>
+</section>
+
+<!-- Collections -->
+<section class="section" id="collections">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Explore</span>
+      <h2>Our Collections</h2>
+      <p>Three edited selections, each chosen for a refined, sophisticated aesthetic.</p>
+    </div>
+    <div class="collections-grid">
+      <a class="collection-card reveal" href="#bestsellers">
+        <div class="collection-card__img" style="background:linear-gradient(160deg,#F4EFE7,#E2D3BC)"></div>
+        <div class="collection-card__overlay"></div>
+        <div class="collection-card__body">
+          <span class="eyebrow">Just In</span>
+          <h3>New Arrivals</h3>
+          <span>Discover</span>
+        </div>
+      </a>
+      <a class="collection-card reveal" href="#bestsellers">
+        <div class="collection-card__img" style="background:linear-gradient(160deg,#EFE7DA,#D6C3A6)"></div>
+        <div class="collection-card__overlay"></div>
+        <div class="collection-card__body">
+          <span class="eyebrow">Loved By Many</span>
+          <h3>Bestsellers</h3>
+          <span>Discover</span>
+        </div>
+      </a>
+      <a class="collection-card reveal" href="#deals">
+        <div class="collection-card__img" style="background:linear-gradient(160deg,#F1EAE0,#D9CBB4)"></div>
+        <div class="collection-card__overlay"></div>
+        <div class="collection-card__body">
+          <span class="eyebrow">Tasteful Prices</span>
+          <h3>Trending Deals</h3>
+          <span>Discover</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Bestsellers placeholder (pull in real products later) -->
+<section class="section section--tight" id="bestsellers">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Customer Favorites</span>
+      <h2>Bestsellers</h2>
+      <p>A curated few — the pieces our customers reach for most.</p>
+    </div>
+    <div class="product-grid" id="grid-bestsellers">
+      <!-- Replace with a product loop or a collection.products render when you add products -->
+      <p class="muted">Add your products in Shopify and I can wire this up to show real items.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section" id="newsletter" style="background:var(--ivory-soft)">
+  <div class="container newsletter reveal">
+    <span class="eyebrow">Stay Close</span>
+    <h2>Be the First to Know.</h2>
+    <p>Join the Channaira community for new arrivals, exclusive offers, and early access.</p>
+    <form id="newsletter-form" method="post" action="/contact#contact_form" accept-charset="UTF-8">
+      <input type="email" id="news-email" name="contact[email]" placeholder="Enter your email" aria-label="Enter your email" />
+      <button class="btn btn--primary" type="submit">Join Channaira</button>
+    </form>
+    <div class="form-msg" id="news-msg" role="status" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+  <div class="container">
+    <span class="eyebrow">Your Collection Awaits</span>
+    <h2>Your Next Statement Piece Awaits.</h2>
+    <a class="btn btn--primary btn--lg" href="#collections">Shop the Collection</a>
+  </div>
+</section>

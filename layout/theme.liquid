@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>{{ shop.name }} — {{ page_title }}</title>
+    <meta name="description" content="Channaira — Affordable Luxury Jewelry">
+    {{ content_for_header }}
+    {{ 'styles.css' | asset_url | stylesheet_tag }}
+  </head>
+  <body>
+    {% render 'header' %}
+
+    <main role="main">
+      {{ content_for_layout }}
+    </main>
+
+    {% render 'footer' %}
+
+    {{ 'main.js' | asset_url | script_tag }}
+    {{ content_for_footer }}
+  </body>
+</html>

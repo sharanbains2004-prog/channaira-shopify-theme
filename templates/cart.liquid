@@ -1,0 +1,22 @@
+<!-- Simple cart template -->
+{% if cart.item_count == 0 %}
+  <div class="container"><h2>Your cart is empty</h2><p><a href="/">Continue shopping</a></p></div>
+{% else %}
+  <div class="container">
+    <h2>Your Cart ({{ cart.item_count }})</h2>
+    <table>
+      <thead><tr><th>Product</th><th>Price</th><th>Qty</th></tr></thead>
+      <tbody>
+        {% for item in cart.items %}
+          <tr>
+            <td>{{ item.product.title }}{% if item.variant.title != 'Default Title' %} — {{ item.variant.title }}{% endif %}</td>
+            <td>{{ item.final_line_price | money }}</td>
+            <td>{{ item.quantity }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p>Subtotal: <strong>{{ cart.total_price | money }}</strong></p>
+    <p><a class="btn btn--primary" href="/checkout">Checkout</a></p>
+  </div>
+{% endif %}

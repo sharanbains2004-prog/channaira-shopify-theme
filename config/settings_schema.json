@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Theme",
+    "settings": [
+      { "type": "text", "id": "brand_name", "label": "Brand name", "default": "Channaira" },
+      { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#B9914F" }
+    ]
+  }
+]
